@@ -1,0 +1,137 @@
+.img {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+}
+
+.dark-button:hover,
+.light-button:hover {
+    cursor: pointer;
+    color: #bdae82;
+}
+
+@keyframes dayLight {
+    0% {
+        top: 20px;
+    }
+    10% {
+        top: 0px;
+    }
+    100% {
+        top: 110%;
+    }
+}
+
+button {
+    max-width: 50px;
+}
+
+.controls {
+    position: absolute;
+    right: -374px;
+    display: flex;
+    height: 50px;
+    width: 400px;
+    justify-content: space-around;
+    background-color: black;
+    transition-duration: 0.3s;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.controls.active {
+    right: -15px;
+}
+
+.controls-show {
+    transition-duration: 0.1s;
+    color: #fff;
+}
+
+.controls-show:hover {
+    color: #bdae82;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.controls-show.active:hover {
+    transform: rotate(180deg);
+    transition-duration: 0.1s;
+}
+
+.stop {
+    width: 30px;
+    height: 30px;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+.pause {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+.span_pause {
+    width: 10px;
+    height: 30px;
+    background-color: #000;
+}
+
+.play {
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-left: solid 30px #fff;
+    border-bottom: solid 15px transparent;
+    border-top: solid 15px transparent;
+    border-right: none;
+    transition-duration: 0.3s;
+}
+
+.play:hover {
+    border-left: solid 30px #bdae82;
+    transition-duration: 0.3s;
+}
+.pause:hover,
+.stop:hover {
+    background-color: #bdae82;
+    transition-duration: 0.3s;
+}
+
+.play:active,
+.pause:active,
+.stop:active {
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+}
+
+.rain {
+    background-color: #000;
+    height: 100px;
+    width: 200px;
+    padding-right: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: -140px;
+    color: #fff;
+    transition-duration: 0.3s;
+
+}
+
+.rain:hover {
+    color: #bdae82;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}

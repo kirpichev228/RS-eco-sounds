@@ -1,0 +1,24 @@
+.footer {
+    height: 8vh;
+    border-top: 2px solid #bdae82;
+    background-color: black;
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+
+}
+
+.footer.light {
+    background-color: white;
+    transition-duration: 1s;
+}
+
+.rss {
+    height: 190px;
+}
+
+.peepee.day{
+    color: #000;
+}

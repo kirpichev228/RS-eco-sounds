@@ -1,0 +1,205 @@
+.starter {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.starter-header {
+    font-size: 70px;
+    position: relative;
+    left: -600px;
+}
+
+.starter-header.load {
+    
+    left: 0;
+    transition-duration: 1s;
+}
+
+.starter-hello {
+    position: relative;
+    top: -1100px;
+    transition: 1s;
+
+}
+
+.starter-hello.active {
+    top: -700px;
+    transition: 1s;
+}
+
+.starter-paragraph {
+    position: relative;
+    left: -900px;
+    padding-left: 150px;
+    width: 600px;
+    font-size: 30px;
+}
+
+.starter-paragraph.move{
+    left: 0;
+    transition-duration: 2s;
+}
+
+.starter-button {
+    color: #bdae82;
+    cursor: pointer;
+    font-weight: 900;
+    transition-duration: 0.5s;
+}
+
+.starter-button:hover {
+    color: #bdae;
+    transition-duration: 0.5s;
+}
+
+.starter-pointer {
+    animation: pointers 0.5s ease 0s infinite alternate;
+}
+
+.starter.hidden {
+    position: absolute;
+    left: -150%;
+    transition-duration: 1s;
+}
+
+@keyframes pointers {
+    0% {
+        padding-left: 0px;
+    }
+    100% {
+        padding-left: 20px;
+    }
+}
+
+.active {
+    color: #bdae82;
+}
+
+.starter-ficha {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    transform-origin: right;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.starter-ficha.rotate {
+    animation: ficha 1.5s ease;
+    transform: rotate(0);
+
+}
+
+@keyframes ficha {
+    0% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(-45%);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.starter-stick {
+    width: 500px;
+    height: 0;
+    border: 5px solid #fff;
+    background-color: #000;
+}
+
+.starter-open {
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #fff 3px solid;
+    border-radius: 20px;
+}
+
+.starter-open:hover {
+    cursor: pointer;
+    background-color: #bdae82;
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+.starter-ficha.hidden {
+    position: absolute;
+    right: -200%;
+    transition-duration: 1s;
+}
+
+.hand {
+    position: absolute;
+    transform-origin: bottom center;
+    right: 700px;
+    top: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.hand.active {
+    animation: handmove 1.5s ease;
+}
+
+.hand-pointer {
+    transform: rotate(30deg);
+    position: absolute;
+    top: 130px;
+    right: 840px;
+}
+
+@keyframes handmove {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(45deg);
+    }
+    20% {
+        transform: rotate(-45deg);
+    }
+    30% {
+        transform: rotate(45deg);
+    }
+    40% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    60% {
+        transform: rotate(-45deg);
+    }
+    70% {
+        transform: rotate(45deg);
+    }
+    80% {
+        transform: rotate(-45deg);
+    }
+    90% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
